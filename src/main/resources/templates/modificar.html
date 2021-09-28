@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Datos de la Persona</title>
+</head>
+<body>
+<h1> Datos de la Persona </h1>
+
+<a th:href="@{/}"> Regresar </a>
+<br/>
+<form th:action="@{/guardar}" method="post" th:object="${persona}">
+    <input type="hidden" name="idPersona" th:field="*{idPersona}"/>
+
+    <label for="nombre"> Nombre: </label>
+    <input th:type="text" name="Nombre" th:field="*{nombre}"/>
+    <br/>
+    <label for="apellido"> Apellido: </label>
+    <input th:type="text" name="A   pellido" th:field="*{apellido}"/>
+    <br/>
+    <label for="email"> Email: </label>
+    <input th:type="email" name="Correo" th:field="*{email}"/>
+    <br/>
+    <label for="telefono"> Teléfono: </label>
+    <input th:type="tel" name="Teléfono" th:field="*{telefono}"/>
+    <br/>
+    <input type="submit" name="Guardar" value="Guardar"/>
+
+</form>
+
+</body>
+</html>
