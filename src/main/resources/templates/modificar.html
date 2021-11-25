@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"/>
     <title>Datos de la Persona</title>
 </head>
 <body>
-<h1> Datos de la Persona </h1>
+
+<header th:replace="layout/plantilla :: header"></header>
+
+<h2> Datos de la Persona </h2>
 
 <a th:href="@{/}"> Regresar </a>
 <br/>
@@ -34,6 +37,8 @@
     <input type="submit" name="Guardar" value="Guardar"/>
 
 </form>
+
+<footer th:replace="layout/plantilla :: footer"></footer>
 
 </body>
 </html>
