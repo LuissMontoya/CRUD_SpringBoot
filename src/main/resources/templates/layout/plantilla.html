@@ -8,11 +8,11 @@
 </head>
 <body>
 <header th:fragment="header">
-    <h1> Control de Clientes </h1>
+    <h1 th:text="#{plantilla.titulo}"> Titulo </h1>
 </header>
 
 <footer th:fragment="footer">
-    <p>Derechos Reservados a <a href="https://twitter.com/luissmontoyap" target="_blank">Luiss Montoya </a> </p>
+    <p> [[#{plantilla.pie_pagina} ]] <a href="https://twitter.com/luissmontoyap" target="_blank">Luiss Montoya </a> </p>
 </footer>
 
 </body>
