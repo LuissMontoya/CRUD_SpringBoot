@@ -12,7 +12,15 @@
 </header>
 
 <footer th:fragment="footer">
-    <p> [[#{plantilla.pie_pagina} ]] <a href="https://twitter.com/luissmontoyap" target="_blank">Luiss Montoya </a> </p>
+    <div>
+        <br/>
+        <a th:href="@{/(lang=es)}"> ES </a> |
+        <a th:href="@{/(lang=en)}"> EN </a> |
+        <p> [[#{plantilla.pie_pagina} ]] <a href="https://twitter.com/luissmontoyap" target="_blank">Luiss Montoya </a>
+        </p>
+
+    </div>
+
 </footer>
 
 </body>
