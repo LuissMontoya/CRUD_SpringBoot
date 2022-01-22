@@ -7,7 +7,16 @@
     <meta charset="UTF-8"/>
 </head>
 <body>
-    <h1> Login </h1>
+<header th:replace="layout/plantilla :: header"></header>
+
+    <section id="actions" class="py-4 mb-4 bg-light">
+        <div class="container">
+            <div class="row">
+                <!--Se puede agregar algunos botones  -->
+            </div>
+        </div>
+
+    </section>
 
     <form method="POST" th:action="@{/login}" >
         <label for="username"> Username:</label>
